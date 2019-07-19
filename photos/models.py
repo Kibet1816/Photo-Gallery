@@ -29,3 +29,6 @@ class Image(models.Model):
     location = models.ForeignKey(Location , default = 1)
     category = models.ForeignKey(Category , default = 1)
     # date = models.DateTimeField(auto_now_add = True)
+
+    def save_image(self):
+        self.save()

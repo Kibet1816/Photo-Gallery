@@ -38,6 +38,9 @@ class ImageTestClass(TestCase):
         """
         Test method for save method
         """
+        self.new_image.save_image()
+        images = Image.objects.all()
+        self.assertTrue(len(images)>0)
 
 
 class CategoryTestClass(TestCase):
