@@ -3,7 +3,7 @@
 }
 h1 {
   font-family: "Barriecito", cursive;
-  color: red;
+  color: black;
 }
 .container {
   display: grid;
@@ -30,11 +30,21 @@ img {
   margin-right: 10px;
   height: 37vh;
 }
+.box {
+    margin: 20px;
+    height: 15vh;
+}
+.button{
+    text-align: center;
+}
+.button > img{
+    color: black;
+}
 .zone {
   cursor: pointer;
   color: #fff;
   font-size: 2em;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   border: 1px solid #bbb;
   transition: all 0.3s linear;
 }

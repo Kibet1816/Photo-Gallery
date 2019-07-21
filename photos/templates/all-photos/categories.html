@@ -1,22 +1,12 @@
 {% extends 'all-photos/base.html' %}
 
 {% block content %}
-{{block.super}}
-<div class="container">
-    <div class="zone cover">
-        <h1 class="text-center">Photos will be displayed here</h1>
-    </div><br><br>
-    <div class="wrapper-grid">
-        {% for image_item in images %}
-        <div class="content">
-            <div class="content-overlay"></div>
-            <img src="{{image_item.image.url}}" alt="">
-            <div class="content-details fadeIn-bottom">
-                <h3 class="content-title"> {{image_item.name}} </h3>
-            </div>
-        </div>
-        {% empty %}
-        {% endfor %}
-    </div>
-</div>
+  {{block.super}}
+        <div class="box zone"><img src=""></div>
+        <div class="box zone"><img src=""></div>
+        <div class="box zone"><img src=""></div>
+        <div class="box zone"><img src=""></div>
+        <div class="box zone"><img src=""></div>
+        <div class="box zone"><img src=""></div>
+        <div class="box zone"><img src=""></div>
 {% endblock %}
