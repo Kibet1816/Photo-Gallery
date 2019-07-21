@@ -10,6 +10,12 @@ class Category(models.Model):
     def save_category(self):
         self.save()
 
+    @classmethod
+    def display_img_by_category(cls):
+        img_cat = cls.objects.all()
+
+        return img_cat
+
 class Location(models.Model):
     """
     Location model class
@@ -18,6 +24,12 @@ class Location(models.Model):
 
     def save_location(self):
         self.save()
+
+    @classmethod
+    def show_img_by_location(cls):
+        img_loc = cls.objects.all()
+
+        return img_loc
 
 class Image(models.Model):
     """
