@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Image
 
 # Create your views here.
 
@@ -12,10 +13,12 @@ def categories(request):
     """
     Function to render categories page
     """
-    return render(request,'all-photos/categories.html')
+    images = Image.display_image()
+    return render(request,'all-photos/categories.html',{"images":images})
 
 def location(request):
     """
     Function to render location file
     """
-    return render(request,'all-photos/location.html')
+    images = Image.display_image()
+    return render(request,'all-photos/location.html',{"images":images})
