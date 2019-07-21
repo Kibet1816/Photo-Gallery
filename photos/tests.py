@@ -40,15 +40,14 @@ class ImageTestClass(TestCase):
         """
         self.new_image.save_image()
         images = Image.objects.all()
-        self.assertTrue(len(images)>0)
-
+        self.assertTrue(len(images) > 0)
 
     def test_display_image(self):
         """
         Test method to get an image
         """
         this_image = Image.display_image()
-        self.assertTrue(len(this_image)>0)
+        self.assertTrue(len(this_image) > 0)
 
 
 class CategoryTestClass(TestCase):
@@ -76,13 +75,6 @@ class CategoryTestClass(TestCase):
         categories = Category.objects.all()
         self.assertTrue(len(categories) > 0)
 
-    def test_show_img_by_category(self):
-        """
-        Test method to show image based on its location
-        """
-        this_image1 = Category.display_img_by_category()
-        self.assertTrue(len(this_image1)>0)
-
 
 class LocationTestClass(TestCase):
     """
@@ -105,10 +97,3 @@ class LocationTestClass(TestCase):
         self.new_location.save_location()
         locations = Location.objects.all()
         self.assertTrue(len(locations) > 0)
-
-    def test_display_img_by_location(self):
-        """
-        Test method to display image by location
-        """
-        this_image2 = Location.display_img_by_location()
-        self.assertTrue(len(this_image2)>0)
