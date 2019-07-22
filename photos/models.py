@@ -52,7 +52,7 @@ class Architecture(models.Model):
     """
     Architecture model class
     """
-    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    architecture = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
 
     def save_image(self):
@@ -68,7 +68,7 @@ class Animals(models.Model):
     """
     Animals Model class
     """
-    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    animal = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
 
     def save_image(self):
@@ -84,7 +84,7 @@ class Landscapes(models.Model):
     """
     Landscape model class
     """
-    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    landscape = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
 
     def save_image(self):
@@ -100,7 +100,7 @@ class Sport(models.Model):
     """
     Sport model class
     """
-    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    sport = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
 
     def save_image(self):
@@ -116,7 +116,7 @@ class Travel(models.Model):
     """
     Travel model class
     """
-    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    travel = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
 
     def save_image(self):
@@ -132,7 +132,7 @@ class Food(models.Model):
     """
     Food model class
     """
-    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    food = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
 
     def save_image(self):

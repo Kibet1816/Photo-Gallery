@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Image
+from .models import Image,Travel,Landscapes,Animals,Architecture,Food,Sport
 
 # Create your views here.
 
@@ -22,40 +22,40 @@ def categories(request):
 def travel(request):
     """
     """
-    images = Image.display_image()
+    images = Travel.display_image()
     return render(request, 'all-photos/travel.html', {"images": images})
 
 
 def food(request):
     """
     """
-    images = Image.display_image()
+    images = Food.display_image()
     return render(request, 'all-photos/food.html', {"images": images})
 
 
 def sport(request):
     """
     """
-    images = Image.display_image()
+    images = Sport.display_image()
     return render(request, 'all-photos/sport.html', {"images": images})
 
 
 def animals(request):
     """
     """
-    images = Image.display_image()
-    return render(request, 'all-photos/animals.html', {"images": images})
+    animals = Animals.display_image()
+    return render(request, 'all-photos/animals.html', {"animals": animals})
 
 
 def architecture(request):
     """
     """
-    images = Image.display_image()
+    images = Architecture.display_image()
     return render(request, 'all-photos/architecture.html', {"images": images})
 
 
 def landscapes(request):
     """
     """
-    images = Image.display_image()
+    images = Landscapes.display_image()
     return render(request, 'all-photos/landscapes.html', {"images": images})
