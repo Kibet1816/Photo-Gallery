@@ -51,7 +51,7 @@ def architecture(request):
     """
     """
     images = Image.display_image()
-    return render(request, 'all-photos/architecturel.html', {"images": images})
+    return render(request, 'all-photos/architecture.html', {"images": images})
 
 
 def landscapes(request):

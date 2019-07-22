@@ -20,20 +20,117 @@ class Location(models.Model):
     """
     Location model class
     """
-    name = models.CharField(max_length=250)
+    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    name = models.CharField(max_length = 250 )
 
-    def save_location(self):
+    def save_image(self):
         self.save()
 
     @classmethod
-    def show_img_by_location(cls):
-        img_loc = cls.objects.all()
+    def display_image(cls):
+        img = cls.objects.all()
 
-        return img_loc
+        return img
 
 class Image(models.Model):
     """
     Image model class
+    """
+    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    name = models.CharField(max_length = 250 )
+
+    def save_image(self):
+        self.save()
+
+    @classmethod
+    def display_image(cls):
+        img = cls.objects.all()
+
+        return img
+
+class Architecture(models.Model):
+    """
+    Architecture model class
+    """
+    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    name = models.CharField(max_length = 250 )
+
+    def save_image(self):
+        self.save()
+
+    @classmethod
+    def display_image(cls):
+        img = cls.objects.all()
+
+        return img
+
+class Animals(models.Model):
+    """
+    Animals Model class
+    """
+    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    name = models.CharField(max_length = 250 )
+
+    def save_image(self):
+        self.save()
+
+    @classmethod
+    def display_image(cls):
+        img = cls.objects.all()
+
+        return img
+
+class Landscapes(models.Model):
+    """
+    Landscape model class
+    """
+    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    name = models.CharField(max_length = 250 )
+
+    def save_image(self):
+        self.save()
+
+    @classmethod
+    def display_image(cls):
+        img = cls.objects.all()
+
+        return img
+
+class Sport(models.Model):
+    """
+    Sport model class
+    """
+    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    name = models.CharField(max_length = 250 )
+
+    def save_image(self):
+        self.save()
+
+    @classmethod
+    def display_image(cls):
+        img = cls.objects.all()
+
+        return img
+
+class Travel(models.Model):
+    """
+    Travel model class
+    """
+    image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
+    name = models.CharField(max_length = 250 )
+
+    def save_image(self):
+        self.save()
+
+    @classmethod
+    def display_image(cls):
+        img = cls.objects.all()
+
+        return img
+
+class Food(models.Model):
+    """
+    Food model class
     """
     image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
