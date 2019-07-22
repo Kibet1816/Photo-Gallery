@@ -22,7 +22,7 @@ def categories(request):
 def travel(request):
     """
     """
-    images = Travel.display_image()
+    images = Image.display_image()
     return render(request, 'all-photos/travel.html', {"images": images})
 
 
@@ -59,3 +59,6 @@ def landscapes(request):
     """
     images = Landscapes.display_image()
     return render(request, 'all-photos/landscapes.html', {"images": images})
+
+def search(request):
+    return render(request,'all-photos/categories.html')

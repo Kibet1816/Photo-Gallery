@@ -12,7 +12,7 @@ urlpatterns = [
     url('^animals',views.animals,name='animals'),
     url('^architecture',views.architecture,name='architecture'),
     url('^landscapes',views.landscapes,name='landscapes'),
-
+    url('^search_results',views.search,name='search_results')
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)

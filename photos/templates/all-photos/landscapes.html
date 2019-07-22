@@ -4,13 +4,13 @@
 {{block.super}}
 <div class="container">
     <div class="zone cover">
-        <h1 class="text-center">Travel</h1>
+        <h1 class="text-center">Landscapes</h1>
     </div><br><br>
     <div class="wrapper-grid">
         {% for image_item in images %}
         <div class="content">
             <div class="content-overlay"></div>
-            <img src="{{image_item.image.url}}" alt="">
+            <img src="{{image_item.landscape.url}}" alt="">
             <div class="content-details fadeIn-bottom">
                 <h3 class="content-title"> {{image_item.name}} </h3>
             </div>
