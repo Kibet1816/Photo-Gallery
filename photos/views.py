@@ -19,16 +19,43 @@ def categories(request):
     return render(request, 'all-photos/categories.html', {"images": images})
 
 
-def location(request):
-    """
-    Function to render location file
-    """
-    images = Image.display_image()
-    return render(request, 'all-photos/location.html', {"images": images})
-
-
 def travel(request):
     """
     """
     images = Image.display_image()
     return render(request, 'all-photos/travel.html', {"images": images})
+
+
+def food(request):
+    """
+    """
+    images = Image.display_image()
+    return render(request, 'all-photos/food.html', {"images": images})
+
+
+def sport(request):
+    """
+    """
+    images = Image.display_image()
+    return render(request, 'all-photos/sport.html', {"images": images})
+
+
+def animals(request):
+    """
+    """
+    images = Image.display_image()
+    return render(request, 'all-photos/animals.html', {"images": images})
+
+
+def architecture(request):
+    """
+    """
+    images = Image.display_image()
+    return render(request, 'all-photos/architecturel.html', {"images": images})
+
+
+def landscapes(request):
+    """
+    """
+    images = Image.display_image()
+    return render(request, 'all-photos/landscapes.html', {"images": images})

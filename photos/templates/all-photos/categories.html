@@ -1,12 +1,56 @@
 {% extends 'all-photos/base.html' %}
 
 {% block content %}
-  {{block.super}}
-        <div class="box zone"><img src=""></div>
-        <div class="box zone"><img src=""></div>
-        <div class="box zone"><img src=""></div>
-        <div class="box zone"><img src=""></div>
-        <div class="box zone"><img src=""></div>
-        <div class="box zone"><img src=""></div>
-        <div class="box zone"><img src=""></div>
+{{block.super}}
+<div class="wrapper-grid">
+    
+    <div class="content"><a href="{% url 'travel' %}">
+        <div class="content-overlay"></div>
+        <img src="/media/images/travel.jpeg">
+        <div class="content-details fadeIn-top">
+            <h3 class="content-title"> Travel </h3>
+        </div>
+    </a>
+</div>
+<div class="content" ><a href="{% url 'travel' %}">
+    <div class="content-overlay"></div>
+    <img src="/media/images/food.jpeg">
+    <div class="content-details fadeIn-top">
+        <h3 class="content-title"> Food </h3>
+    </div>
+</a>
+</div>
+<div class="content" ><a href="{% url 'travel' %}">
+    <div class="content-overlay"></div>
+    <img src="/media/images/sport.jpeg">
+    <div class="content-details fadeIn-top">
+        <h3 class="content-title"> Sport </h3>
+    </div>
+</a>
+</div>
+<div class="content" ><a href="{% url 'travel' %}">
+    <div class="content-overlay"></div>
+    <img src="/media/images/animals.jpeg">
+    <div class="content-details fadeIn-top">
+        <h3 class="content-title"> Animals </h3>
+    </div>
+</a>
+</div>
+<div class="content" ><a href="{% url 'travel' %}">
+    <div class="content-overlay"></div>
+    <img src="/media/images/architecture.jpeg">
+    <div class="content-details fadeIn-top">
+        <h3 class="content-title"> Architecture </h3>
+    </div>
+</a>
+</div>
+<div class="content" ><a href="{% url 'travel' %}">
+    <div class="content-overlay"></div>
+    <img src="/media/images/landscape.jpeg">
+    <div class="content-details fadeIn-top">
+        <h3 class="content-title"> Landscapes </h3>
+    </div>
+</a>
+</div>
+</div>
 {% endblock %}

@@ -7,7 +7,11 @@ urlpatterns = [
     url('^$',views.index,name='index'),
     url('^categories/',views.categories,name='categories'),
     url('^travel',views.travel,name='travel'),
-    url('^location/',views.location,name='location'),
+    url('^food',views.food,name='food'),
+    url('^sport',views.sport,name='sport'),
+    url('^animals',views.animals,name='animals'),
+    url('^architecture',views.architecture,name='architecture'),
+    url('^landscapes',views.landscapes,name='landscapes'),
 
 ]
 if settings.DEBUG:
