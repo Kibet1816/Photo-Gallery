@@ -1,8 +1,7 @@
 .vscode/
 virtual/
-.gitignore
-*.pyc
-db.sqlite3
 .env
+db.sqlite3
+.gitignore
 media/
-staticfiles/
+*.pyc
