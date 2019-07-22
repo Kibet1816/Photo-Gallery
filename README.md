@@ -113,6 +113,6 @@ Contact [Denis Kibet](kibet1816@gmail.com) for further help/support
 
 ### License
 
-[MIT](https://github.com/jKibet1816/Photo-Gallery/blob/master/license)
+[MIT](https://github.com/Kibet1816/Photo-Gallery/blob/master/license)
 
-Copyright (c)2019 **Denis Kibet**
+Copyright (c)2019 **Denis Kibet**Fix 
