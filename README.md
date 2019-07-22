@@ -115,4 +115,4 @@ Contact [Denis Kibet](kibet1816@gmail.com) for further help/support
 
 [MIT](https://github.com/Kibet1816/Photo-Gallery/blob/master/license)
 
-Copyright (c)2019 **Denis Kibet**Fix 
+Copyright (c)2019 **Denis Kibet** 
