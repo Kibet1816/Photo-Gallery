@@ -4,7 +4,7 @@
 {{block.super}}
 
 <div class="zone cover">
-    <h1 class="text-center">Sport</h1>
+    <h1 class="text-center">Landscapes</h1>
 </div><br><br>
 <div class="wrapper-grid">
     {% for image_item in images %}
@@ -29,6 +29,9 @@
                     </div>
                     <div class="modal-body">
                         <img class="text-center" src="{{image_item.landscape.url}}" alt="">
+                        <div class="url">
+                            <h5>Copy image url : <br> <input type="text" value="{{image_item.image_url}}" style="width: 100%;"></h5>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
