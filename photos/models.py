@@ -38,6 +38,7 @@ class Image(models.Model):
     """
     image = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
+    image_url = models.CharField(max_length = 250,default = 'image.jpg')
 
     def save_image(self):
         self.save()
@@ -54,6 +55,7 @@ class Architecture(models.Model):
     """
     architecture = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
+    image_url = models.CharField(max_length = 250,default = 'image.jpg')
 
     def save_image(self):
         self.save()
@@ -70,6 +72,7 @@ class Animals(models.Model):
     """
     animal = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
+    image_url = models.CharField(max_length = 250,default = 'image.jpg')
 
     def save_image(self):
         self.save()
@@ -86,6 +89,7 @@ class Landscapes(models.Model):
     """
     landscape = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
+    image_url = models.CharField(max_length = 250,default = 'image.jpg')
 
     def save_image(self):
         self.save()
@@ -102,6 +106,7 @@ class Sport(models.Model):
     """
     sport = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
+    image_url = models.CharField(max_length = 250,default = 'image.jpg')
 
     def save_image(self):
         self.save()
@@ -118,6 +123,7 @@ class Travel(models.Model):
     """
     travel = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
+    image_url = models.CharField(max_length = 250,default = 'image.jpg')
 
     def save_image(self):
         self.save()
@@ -134,6 +140,7 @@ class Food(models.Model):
     """
     food = models.ImageField(upload_to = 'images/',default = 'image.jpg')
     name = models.CharField(max_length = 250 )
+    image_url = models.CharField(max_length = 250,default = 'image.jpg')
 
     def save_image(self):
         self.save()
